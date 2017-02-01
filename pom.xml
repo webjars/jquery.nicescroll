@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery.nicescroll</artifactId>
-    <version>3.6.8-fix-SNAPSHOT</version>
+    <version>3.6.8-fix</version>
     <name>jquery.nicescroll</name>
     <description>WebJar for jquery.nicescroll</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <developer>
             <id>mirasrael</id>
             <name>Alexander Bondarev</name>
-            <email></email>
+            <email />
         </developer>
     </developers>
 
@@ -52,7 +52,7 @@
         <url>http://github.com/webjars/jquery.nicescroll</url>
         <connection>scm:git:https://github.com/webjars/jquery.nicescroll.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery.nicescroll.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jquery.nicescroll-3.6.8-fix</tag>
     </scm>
     
     <dependencies>
@@ -89,13 +89,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/dist"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/dist" />
                                 </move>
                             </target>
                         </configuration>
