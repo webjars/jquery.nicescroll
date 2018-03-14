@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery.nicescroll</artifactId>
-    <version>3.6.9-SNAPSHOT</version>
+    <version>3.7.6-SNAPSHOT</version>
     <name>jquery.nicescroll</name>
     <description>WebJar for jquery.nicescroll</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.url>https://github.com/inuyaksa/jquery.nicescroll/archive/v${version.unsnapshot}.zip</upstream.url>
+        <upstream.url>https://github.com/inuyaksa/jquery.nicescroll/archive/${version.unsnapshot}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
