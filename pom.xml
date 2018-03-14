@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery.nicescroll</artifactId>
-    <version>3.7.6</version>
+    <version>3.7.7-SNAPSHOT</version>
     <name>jquery.nicescroll</name>
     <description>WebJar for jquery.nicescroll</description>
     <url>http://webjars.org</url>
@@ -52,7 +52,7 @@
         <url>http://github.com/webjars/jquery.nicescroll</url>
         <connection>scm:git:https://github.com/webjars/jquery.nicescroll.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery.nicescroll.git</developerConnection>
-        <tag>jquery.nicescroll-3.7.6</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <dependencies>
